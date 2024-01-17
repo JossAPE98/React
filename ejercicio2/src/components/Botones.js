@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Botones = () => {
     const[timer,setTimer] = useState(0);
     const tiempoI = () =>{
-        window.myTimer = setInterval(()=>{setTimer((timer)=> timer + 1);},1000) ;
+        window.myTimer = setInterval(()=>{setTimer((timer) => timer + 1);},1000) ;
     };
     const tiempoF = () =>{
         clearInterval(window.myTimer);
